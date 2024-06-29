@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/assignment.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>ASSignment Three</title>
+
+</head>
+
+<body>
+    <div class="container p-5">
+        <h1 class="text-center py-3 my-2 ">BOOKMARKER...</h1>
+        <hr>
+        <h3 class="text-center"> <i class="fa-solid fa-thumbtack"></i> Bookmark your favorite sites <i
+                class="fa-solid fa-thumbtack"></i></h3>
+
+        <div class="name ">
+            <h5 class="my-4"> <i class="fa-solid fa-file"></i> Site Name</h5>
+            <div class="form-floating mb-3">
+                <input oninput="validation(this)" type="text" class="form-control" id="BookmarkName"
+                    placeholder="Bookmark Name">
+                <label for="BookmarkName">Bookmark Name</label>
+            </div>
+        </div>
+        <div class="name">
+            <h5 class="my-4"> <i class="fa-solid fa-file"></i> Site URL</h5>
+            <div class="form-floating mb-3">
+                <input oninput="validation(this)" type="email" class="form-control" id="urlInput"
+                    placeholder="name@example.com">
+                <label for="urlInput">URL Name</label>
+            </div>
+        </div>
+        <div class="alertHere bg-danger p-3 my-2 fs-4 d-none">
+            please fill all required data
+        </div>
+        <div class="test text-center">
+            <button onclick="addURL()" class="btn-danger btnInput px-4 py-2 rounded-2 ">Submit</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+        <div class="row text-center py-3">
+            <div class="col-lg-3">
+                <h6>Index</h6>
+            </div>
+            <div class="col-lg-3">
+                <h6>Website Name</h6>
+            </div>
+            <div class="col-lg-3">
+                <h6>Visit</h6>
+            </div>
+            <div class="col-lg-3">
+                <h6>Delete</h6>
+            </div>
+        </div>
+        <div class="row bg-white text-center align-items-center justify-content-center gy-2" id="demo">
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/assignment3.js"></script>
+</body>
+
+</html>
